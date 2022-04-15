@@ -1,0 +1,44 @@
+
+adammackey@adams-iMac cs % node runtime.js
+Results for the tinyArray
+insert 38.053 μs
+append 98.294 μs
+adammackey@adams-iMac cs % node runtime.js
+Results for the smallArray
+insert 49.723 μs
+append 109.921 μs
+adammackey@adams-iMac cs % node runtime.js
+Results for the mediumArray
+insert 231.882 μs
+append 159.987 μs
+adammackey@adams-iMac cs % node runtime.js
+Results for the largeArray
+insert 6.853894 ms
+append 752.093 μs
+adammackey@adams-iMac cs % node runtime.js
+Results for the extraLargeArray
+insert 979.667571 ms
+append 4.159596 ms
+
+TinyArray 
+insert 38.053 μs
+append 98.294 μs
+smallArray
+insert 49.723 μs
+append 109.921 μs
+mediumArray
+insert 231.882 μs
+append 159.987 μs
+largeArray
+insert 6.853894 ms
+append 752.093 μs
+extraLargeArray
+insert 979.667571 ms
+append 4.159596 ms
+
+doublerappend is the 0(1) runtime cuz it uses the .push method at it will take the same time every time it runs the function. 
+
+The doublerInsert is the 0(n), it uses the .unshift method and will go through the entire array each time so it takes longer with larger arrays.
+
+
+The .push method is 0(1) and it takes the same time to work because it works in a linear way. This means it will work faster with larger amounts of data because it will scale better even though with smaller amounts it might be slower. But with the .unshift method its 0(n) which means it will take longer and longer the bigger the array gets even though it was faster with the smaller amounts. 
